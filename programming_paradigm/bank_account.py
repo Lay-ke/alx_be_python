@@ -15,4 +15,4 @@ class BankAccount:
         return self.balance
 
     def display_balance(self):
-        return self.balance
+        return f"Current Balance: ${self.balance}"
