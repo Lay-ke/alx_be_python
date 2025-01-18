@@ -2,14 +2,14 @@ import unittest
 from simple_calculator import SimpleCalculator
 
 class TestSimpleCalculator(unittest.TestCase):
-    def test_add(self):
+    def test_addition(self):
         calculator = SimpleCalculator()
         self.assertEqual(calculator.add(1, 2), 3)
         self.assertEqual(calculator.add(1, -1), 0)
         self.assertEqual(calculator.add(-1, -1), -2)
         self.assertEqual(calculator.add(0, 0), 0)
     
-    def test_subtract(self):
+    def test_subtraction(self):
         calculator = SimpleCalculator()
         self.assertEqual(calculator.subtract(1, 2), -1)
         self.assertEqual(calculator.subtract(1, -1), 2)
